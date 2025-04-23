@@ -1,0 +1,20 @@
+.progress-chart {
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+  .bar {
+    background: var(--hover-bg);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    height: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .fill {
+    background: var(--accent);
+    height: 100%;
+    transition: width 0.5s;
+  }
+  .label {
+    font-size: 1rem;
+  }

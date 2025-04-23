@@ -4,6 +4,9 @@ body {
     padding: 0;
     background-color: #0d0d0d;
     color: #ffd700;
+    flex-direction: column;
+    display: flex;
+    min-height: 100vh; 
 }
 
 header {
@@ -22,23 +25,6 @@ nav {
     padding: 15px;
 }
 
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%; 
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-
 nav a {
     color: #ffd700;
     text-decoration: none;
@@ -52,13 +38,10 @@ nav a:hover {
     background-color: #666;
 }
 
-.container {
+.container, #lessons-list {
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 0 auto;
     padding: 20px;
-    background: #1a1a1a;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.3);
 }
 
 .lessons {
@@ -69,11 +52,18 @@ nav a:hover {
 
 .lesson {
     background: #333;
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
     text-align: center;
     transition: transform 0.3s;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: visible; 
+    min-height: 400px; 
 }
 
 .lesson:hover {
@@ -88,21 +78,57 @@ nav a:hover {
     border-radius: 10px;
 }
 
-
-.lesson video {
-    width: 100%; 
-    max-width: 100%; 
-    height: auto; 
-    display: block; 
+.lesson video, .lesson audio {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px auto;
 }
 
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+}
 
 footer {
     background-color: #1a1a1a;
     color: #ffd700;
     text-align: center;
     padding: 15px;
+    margin-top: auto; 
+}
+
+.lesson button {
+    background-color: #ffd700;
+    color: #000;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.lesson button:hover {
+    background-color: #ffcc00;
+}
+
+#timer {
+    font-size: 1.2rem;
+    color: #ffd700;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
     position: fixed;
-    width: 100%;
-    bottom: 0;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
 }

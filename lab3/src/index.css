@@ -1,0 +1,24 @@
+:root {
+  --bg: #0f2027;
+  --gradient-start: #2c5364;
+  --gradient-end: #0f2027;
+  --fg: #ffffff;
+  --accent: #6ba2ac;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --hover-bg: rgba(255, 255, 255, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  color: var(--fg);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

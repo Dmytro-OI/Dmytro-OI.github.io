@@ -1,0 +1,57 @@
+.home-hero {
+    position: relative;
+    height: calc(100vh - 80px);
+    background: url('https://source.unsplash.com/1600x900/?language,study') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .home-hero .overlay {
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+  }
+  
+  .home-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--accent);
+  }
+  
+  .home-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.2s, opacity 0.3s;
+    text-decoration: none;
+    color: var(--fg);
+  }
+  
+  .primary {
+    background: var(--accent);
+  }
+  
+  .secondary {
+    background: transparent;
+    border: 2px solid var(--accent);
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+  }
