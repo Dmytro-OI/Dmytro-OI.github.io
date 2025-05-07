@@ -1,0 +1,59 @@
+.progress-page h2 {
+  font-size: 2rem; 
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.stats {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.badges, .next-goals {
+  font-size: 1.1rem;
+  padding: 1.5rem; 
+}
+
+.badges, .next-goals {
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.badges ul {
+  font-size: 1.1rem;
+}
+
+.progress-page p {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #f44336; 
+  margin: 2rem 0;
+}
+
+.progress-page button {
+  display: block;
+  margin: 0 auto;
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  background-color: #4CAF50; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.progress-page button:hover {
+  background-color: #45a049; 
+}
+
+.progress-page .stats {
+  font-size: 1.3rem;
+  color: #4caf50;
+}
+
+.progress-page .stats p {
+  font-weight: bold;
+  color: white; 
+}

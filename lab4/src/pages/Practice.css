@@ -1,0 +1,29 @@
+.practice-page {
+    text-align: center;
+    padding: 2rem;
+  }
+  .practice-card {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .practice-card h3 {
+    margin-bottom: 0.5rem;
+  }
+  .practice-card button {
+    margin-top: auto;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: var(--accent);
+    color: white;
+    cursor: pointer;
+    transition: opacity 0.3s;
+  }
+  .practice-card button:hover {
+    opacity: 0.8;
+  }
